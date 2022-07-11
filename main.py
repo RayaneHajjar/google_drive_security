@@ -24,11 +24,15 @@ if (op == 1):
 elif (op == 2):
     drive = functionnalities.googleDrive()
     file_id = input("Enter File id: ")
-    functionnalities.downloadFile(drive, file_id)
-    print("DONE!")
+    encrypted = encrypt.main()
+    decrypted = decrypt.main()
+    if (encrypted == decrypted):
+        functionnalities.downloadFile(drive, file_id)
+        print("DONE!")
+    else:
+        print("ACCESS DENIED!")    
 elif (op == 3):
     drive = functionnalities.googleDrive()
     functionnalities.listFiles(drive)
 else:
     os._exit(0)
-
