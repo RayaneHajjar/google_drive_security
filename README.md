@@ -26,7 +26,7 @@ Drive API requires OAuth2.0 for authentication. PyDrive makes your life much eas
 8. Now enter your custom ‘App name’ and enter your gmail in both ‘User support email’ and ‘Developer contact information’ fields then click ‘Save and Continue’.  
 9. Click ‘Save and Continue’ for Scopes and for Test Users then click ‘Back to Dashboard’.  
 10. Select ‘Credentials’ from the left menu, click ‘Create Credentials’, select ‘OAuth client ID’.  
-11. Select ‘Application type’ to be Desktop application. Enter an appropriate name. Input http://localhost:8080 for ‘Authorized JavaScript origins’. Input http://localhost:8080/ for ‘Authorized redirect URIs’. Click ‘Save’.  
+11. Select ‘Application type’ to be Web application. Enter an appropriate name. Input http://localhost:8080 for ‘Authorized JavaScript origins’. Input http://localhost:8080/ for ‘Authorized redirect URIs’. Click ‘Save’.  
 12. Click ‘Download JSON’ on the right side of Client ID to download client_secret_<really long ID>.json.  
 The downloaded file has all authentication information of your application. Rename the file to “client_secrets.json” and place it in your working directory.
 13. Go back to ‘OAuth consent screen’ and click ‘Publish App’ then ‘Confirm’.  
@@ -34,7 +34,7 @@ The downloaded file has all authentication information of your application. Rena
 ### Setting up Gmail account
 1. Go to (https://myaccount.google.com).  
 2. Select ‘Security’ from the left menu.  
-3. Click ‘App passwords’ under Signing in to Google.   
+3. Click ‘App passwords’ under Signing in to Google. (It's only shown if you have enabled the 2-Step Verification)     
 4. Select ‘other(custom name)’ on Select app. Enter your custom name. Select ‘Windows Computer’ on Select device. Click ‘Generate’. Copy the password to paste it inside the application.  
 
 ### Running the App
